@@ -1,3 +1,4 @@
-.idea
+.idea/
 source_code.py
 my_attempt.py
+data/book_douban.csv
