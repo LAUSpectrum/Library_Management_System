@@ -7,11 +7,11 @@ import datetime, time
 class Borrow(Base):
 	__tablename__ = 'borrow'
 
-	is_activate = Column(Boolean, default=True)
+	is_active = Column(Boolean, default=True)
 	left_opportunity = Column(Integer, default=3)  # one can only renew books a book for three times
-	book_isbn = Column(String(32), ForeignKey("books.isbn"))
+	book_isbn = Column(String(32), nullable=False)
 	# book = relationship("Book",backref="this_book_has_been_borrowed")
-	member_id = Column(String(32), ForeignKey("members.id"))
+	member_id = Column(String(32), nullable=False)
 	# member = relationship("Member",backref="this_member_borrow_this_book")
 
 	borrow_date = Column(DATETIME, nullable=False, primary_key=True)
