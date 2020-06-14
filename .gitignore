@@ -1,2 +1,4 @@
 .idea/
+src/.idea/
+src/__pycache__/
 book_douban.csv

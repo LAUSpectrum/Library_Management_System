@@ -1,5 +1,5 @@
 import pandas as pd
-from DbConfig import Base, engine
+from DbConfig import Base, engine, sessionmaker
 from sqlalchemy.orm import Session
 from tables.Book import Book
 from tables.Admin import Admin
